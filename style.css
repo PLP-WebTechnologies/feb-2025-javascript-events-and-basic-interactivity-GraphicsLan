@@ -1,0 +1,291 @@
+/* styles.css */
+body {
+    font-family: open sans, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    background-color: #680068;
+    padding-top: 50px; /* Add padding to prevent content from overlapping the fixed nav */
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-wrap: normal; /* Allow the title to wrap normally */
+    font-weight: 700; /* Make the title bold */
+}
+
+nav {
+    background: #ffffff;
+    color: #02001d;
+    font-size: 20px;
+    padding: 40px;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; /* Align items vertically */
+    position: fixed; /* Fix the nav at the top */
+    top: 0;
+    left: 0; /* Ensure it starts from the left edge */
+    width: 100vw; /* Make it span the full viewport width */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Arrange list items horizontally */
+}
+
+nav li {
+    margin: 0 15px; /* Add spacing between links */
+}
+
+nav a {
+    color: #680068;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 100px;
+}
+
+#overview {
+   
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #fff; /* Change text color for better contrast */
+    padding: 100px 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align the text */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#overview h2 {
+    font-size: 2.5em; /* Increase the font size of the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make the heading uppercase */
+    letter-spacing: 2px; /* Add letter spacing for a modern look */
+}
+
+#overview p {
+    font-size: 20px; /* Increase the font size of the paragraph */
+    line-height: 1.8; /* Improve readability */
+    margin-bottom: 30px; /* Add spacing below the paragraph */
+}
+
+#overview h1 {
+    font-size: 60px; /* Make the name stand out */
+    font-weight: bold; /* Make the name bold */
+    margin-top: 20px; /* Add spacing above the name */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle text shadow */
+}
+
+#contact {
+    color: #ffffff;
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 30px; /* Add spacing between items */
+    padding: 30px; /* Add padding for better spacing */
+    flex-wrap: wrap; /* Ensure items wrap if the screen is too small */
+}
+
+footer {
+    background: #ffffff;
+    color: #680068;
+    text-align: center;
+    padding: 40px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-container {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Add spacing between the image and text */
+    flex-wrap: wrap; /* Wrap items if the screen is too small */
+}
+.about-container h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.about-text {
+    flex: 1; /* Allow the text to take up remaining space */
+    padding: 20px; /* Add padding for better spacing */
+    color: #fff;
+    font-size: 50;
+    line-height: 1.6; /* Increase line height for better readability */
+}
+h3 {
+    font-size: 20px; /* Increase font size for the heading */
+    color: #ffffff; /* Change heading color */
+}
+
+#services {
+    
+    padding: 50px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Round the corners of the section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center-align the text */
+}
+
+#services h2 {
+    font-size: 2em; /* Increase the font size of the heading */
+    color: #ffffff; /* Change the heading color */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make the heading uppercase */
+}
+
+#services h3 {
+    font-size: 1.5em; /* Increase the font size of the subheading */
+    color: #ffffff; /* Change the subheading color */
+    margin-bottom: 15px; /* Add spacing below the subheading */
+}
+
+#services p {
+    font-size: 1.1em; /* Increase the font size of the paragraph */
+    color: #ffffff; /* Change the text color */
+    margin-bottom: 30px; /* Add spacing below the paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+#services ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Wrap items if the screen is too small */
+    justify-content: center; /* Center the list items */
+    gap: 20px; /* Add spacing between items */
+}
+
+#services li {
+    background-color: #ffffff; /* Add a white background to each item */
+    padding: 20px; /* Add padding inside each item */
+    border: 1px solid #000000; /* Add a border around each item */
+    border-radius: 10px; /* Round the corners of each item */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    max-width: 300px; /* Limit the width of each item */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effects */
+}
+
+#services li:hover {
+    transform: translateY(-5px); /* Move the item up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance the shadow on hover */
+}
+
+#services li h4 {
+    font-size: 1.2em; 
+    color: #ffffff; 
+    margin-bottom: 10px; 
+}
+
+#services li p {
+    font-size: 1em; /* Adjust the font size of the list item text */
+    color: #ffffff; /* Change the text color */
+    line-height: 1.5; /* Improve readability */
+}
+
+#projects {
+   
+    padding: 50px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Round the corners of the section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center-align the text */
+}
+
+#projects h2 {
+    font-size: 2.5em; /* Increase the font size of the heading */
+    color: #ffffff; /* Change the heading color */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make the heading uppercase */
+    letter-spacing: 2px; /* Add letter spacing for a modern look */
+}
+
+#projects .project {
+    
+    padding: 20px; /* Add padding inside each project */
+    border: 1px solid #ffffff; /* Add a border around each project */
+    border-radius: 10px; /* Round the corners of each project */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 20px; /* Add spacing between projects */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth hover effects */
+    max-width: 300px; /* Limit the width of each project card */
+    text-align: left; /* Align text to the left */
+    display: inline-block; /* Display projects inline for a grid-like layout */
+}
+.project-button{
+     display: inline-block; /* Make the links look like buttons */
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
+    padding: 10px 20px; /* padding for spacing */
+    border-radius: 5px; /* Rounding the corners */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1em; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px; /* Add spacing between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover effects */
+}
+
+
+
+#projects .project:hover {
+    transform: translateY(-5px); /* Move the project up slightly on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhance the shadow on hover */
+}
+
+#projects .project h3 {
+    font-size: 1.5em; /* Increase the font size of the project title */
+    color: #ffffff; /* Change the title color */
+    margin-bottom: 10px; /* Add spacing below the title */
+}
+
+#projects .project p {
+    font-size: 1em; /* Adjust the font size of the project description */
+    color: #ffffff; /* Change the text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+#contact {
+   
+    padding: 50px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Round the corners of the section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center-align the text */
+}
+#contact h2 {
+    font-size: 20px; /* Increase the font size of the heading */
+    color: #ffffff; /* Change the heading color */
+    margin-bottom: 20px; /* Add spacing below the heading */
+    text-transform: uppercase; /* Make the heading uppercase */
+    letter-spacing: 2px; /* Add letter spacing for a modern look */
+}
+
+.contact-button {
+    display: inline-block; /* Make the links look like buttons */
+    background-color: #ffffff; /* Button background color */
+    color: #000000; /* Button text color */
+    padding: 10px 20px; /* padding for spacing */
+    border-radius: 5px; /* Rounding the corners */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 1em; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    margin: 10px; /* Add spacing between buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover effects */
+}
+
+.contact-button:hover {
+    background-color: #ff0000; /* Darken the button on hover */
+    transform: translateY(-3px); /* Slightly move the button up on hover */
+}
+
