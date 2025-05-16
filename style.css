@@ -107,19 +107,19 @@ footer {
     width: 100%;
 }
 
-.about-container {
+.about_container {
     display: flex; /* Use flexbox to arrange items horizontally */
     align-items: center; /* Align items vertically */
     gap: 20px; /* Add spacing between the image and text */
     flex-wrap: wrap; /* Wrap items if the screen is too small */
 }
-.about-container h2 {
+.about_container h2 {
     text-transform: uppercase;
     text-align: center;
 }
 
 
-.about-text {
+.about_text {
     flex: 1; /* Allow the text to take up remaining space */
     padding: 20px; /* Add padding for better spacing */
     color: #fff;
@@ -224,7 +224,7 @@ h3 {
     text-align: left; /* Align text to the left */
     display: inline-block; /* Display projects inline for a grid-like layout */
 }
-.project-button{
+.project_button{
      display: inline-block; /* Make the links look like buttons */
     background-color: #ffffff; /* Button background color */
     color: #000000; /* Button text color */
@@ -271,7 +271,7 @@ h3 {
     letter-spacing: 2px; /* Add letter spacing for a modern look */
 }
 
-.contact-button {
+.contact_button {
     display: inline-block; /* Make the links look like buttons */
     background-color: #ffffff; /* Button background color */
     color: #000000; /* Button text color */
@@ -284,8 +284,9 @@ h3 {
     transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover effects */
 }
 
-.contact-button:hover {
+.contact_button:hover {
     background-color: #ff0000; /* Darken the button on hover */
     transform: translateY(-3px); /* Slightly move the button up on hover */
 }
+
 

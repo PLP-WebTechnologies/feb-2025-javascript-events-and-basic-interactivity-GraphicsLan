@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-    <header class="site-header">
+    <header class="site_header">
         <!--potfolio  Navigation menu -->
         <nav aria-label="Primary navigation">
             <ul>
@@ -23,19 +23,19 @@
     </header>
     </div>
          <!--Potfolio content -->
-    <main class="portfolio-content">
-        <section id="overview" aria-labelledby="overview-heading">
+    <main class="portfolio_content">
+        <section id="overview" aria-labelledby="overview_heading">
             <p>Welcome to my professional portfolio.<br> I specialize in Web Development,
                 Graphic design and Data Analysis.</p>
-                <h1>Ian Githinji Bosire</h1>
-                <p>A Web developer, Data Analyst and Graphic Designer based in Nakuru, Kenya
+                <h1>Ian Githinji</h1>
+                <p>Web developer || Data Analyst || Graphic Designer 
                 </p>    
         </section>
 
-        <section id="about" aria-labelledby="about-heading">
-            <div class="about-container">
-                <div class="about-text">
-                    <h2 id="about-heading">About Me</h2>
+        <section id="about" aria-labelledby="about_heading">
+            <div class="about_container">
+                <div class="about_text">
+                    <h2 id="about_heading">About Me</h2>
                     <h3>Hey there, I am Ian Githinji.</h3>
                     <p>I am a passionate web developer with a keen interest in creating dynamic and user-friendly websites and systems. 
                         I have experience in various programming languages and frameworks, and I am always eager to learn more.</p>
@@ -47,8 +47,8 @@
             </div>
         </section>
 
-        <section id="services" aria-labelledby="services-heading">
-            <h2 id="services-heading">Services</h2>
+        <section id="services" aria-labelledby="services_heading">
+            <h2 id="services_heading">Services</h2>
             <h3>What I can do</h3>
             <p>I provide a range of services to help businesses and individuals achieve their goals:</p>
             <ul>
@@ -58,13 +58,13 @@
             </ul>
         </section>
 
-        <section id="projects" aria-labelledby="projects-heading">
+        <section id="projects" aria-labelledby="projects_heading">
             <h2 id="projects-heading">Projects</h2>
             <article class="project">
                 <h3>sea-level-predictor-2</h3>
                 <p>This data analysis project predicts future sea level rise using historical datasets.
                     Using Pandas, Numpy, Matplotlib and seabord <br>The project is available in github, feel free to check out</p>
-                    <a href="https://github.com/GraphicsLan/sea-level-predictor-2" class="project-button">Project link</a>
+                    <a href="https://github.com/GraphicsLan/sea-level-predictor-2" class="project_button">Project link</a>
             </article>
             <article class="project">
                 <h3>PrimeTech Foundation Website</h3>
@@ -73,20 +73,32 @@
             </article>
         </section>
 
-        <section id="contact" aria-labelledby="contact-heading">
-            <h2 id="contact-heading">Contact Me</h2>
+        <section id="contact">
+      <h2>Send Message</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required /><br />
+        <input type="email" id="email" placeholder="Your Email" required /><br />
+        <input type="password" id="password" placeholder="Password" required /><br />
+        <input type ="text" id ="your Message" placeholder="Type here" required/><br>
+        <button type="submit">Send</button>
+        <p id="formFeedback"></p>
+      </form>
+    </section>
+
+        <section id="contact" aria-labelledby="contact_heading">
+            <h2 id="contact_heading">Contact Me</h2>
             <address>
-                <a href="mailto:hian14550@gmail.com" class="contact-button">Email Me</a>
-                <a href="tel:+254 725 0233 65" class="contact-button">Call Me</a>
-                <a href="tel:+254 725 0233 65" class="contact-button">WhatsApp me</a>
+                <a href="mailto:hian14550@gmail.com" class="contact_button">Email Me</a>
+                <a href="tel:+254 725 0233 65" class="contact_button">Call Me</a>
+                <a href="tel:+254 725 0233 65" class="contact_button">Lets Chat on WhatsApp </a>
             </address>
         </section>
     </main>
-   
-    <footer class="site-footer">
+     <script src="script.js"></script>
+    <footer class="site_footer">
         <p>&copy; 2025 Ian Githinji Bosire. All rights reserved.</p>
     </footer>
 
 </body>
-<script>src="script.js"</script>
+   
 </html>
